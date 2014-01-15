@@ -1,0 +1,6 @@
+[B]v0.1.1 (13-01-2014):[/B]
+-Fix.
+
+[B]v0.1.0 (13-01-2014):[/B]
+-First beta release of the addon
+
