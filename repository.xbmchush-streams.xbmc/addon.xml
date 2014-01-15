@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.live.streams"
+       name="LiveStreams"
+       version="1.1.2"
+       provider-name="divingmule">
+  <requires>
+    <import addon="xbmc.python" version="2.0"/>
+    <import addon="script.module.beautifulsoup" version="3.0.8"/>
+    <import addon="script.module.simple.downloader" version="0.9.1"/>
+    <import addon="script.module.simplejson" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>livestreams</summary>
+    <description>
+      It's up to you ;-) As an alternative to .strm files this add-on lets you add streams by adding items to an xml file.
+      Thus giving you a nice list with thumbnails, fanart, and media info if you like.
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.p2p-streams"
+       name="p2p-streams"
+       version="0.1.1"
+       provider-name="enen92 - fightnight">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>P2P-Streams addon</summary>
+    <description lang="en">p2p-Streams addon makes it easy for you to play p2p (peer-to-peer) streams directly in XBMC without the need for external players. Currently supporting Acestream and Sopcast streams it comprises an auto-configuration tool that will download the engines specifically for your platform. At the moment it is available for Linux, Windows and the Raspberry PI (OpenELEC, Raspbmc and Xbian). Other platforms will be supported in the future. Original code for SopCast developed by Cristi - Atlanta; original code for the Acestream Client console provided by NuisMons; Acestream-Engine for the Raspberry Pi based on tarasian666 work; Raspberry PI Sopcast emulator credits go to the amazing community in raspberrypi.org official forum. Fannart and icon by Marquerite. Thanks to them all!</description>
+    <description lang="pt">O addon p2p-Streams torna possÃ­vel assistir de forma simples a streams p2p (peer-to-peer) directamente no XBMC sem necessidade de player externos. De momento suporta streams Ace (Acestreams) e Sopcast e inclui uma ferramenta de autoconfiguraÃ§Ã£o que irÃ¡ fazer o download da engine correspondente ao seu sistema operativo. De momento, o addon estÃ¡ disponÃ­vel para Linux, Windows e para todas as distribuiÃ§Ãµes XBMC da Raspberry PI (OpenELEC, Raspbmc, Xbian). Novas plataformas serÃ£o adicionadas no futuro. CÃ³digo original para o Sopcast foi desenvolvido por Cristi - Atlanta; o cÃ³digo original para a consola de cliente Acestream foi desenvolvida por NuisMons; A Acestream-Engine para a Raspberry Pi foi modificada do trabalho original de Tarasian666. Os crÃ©ditos do emulador Sopcast para a Raspberry Pi vÃ£o para a fantÃ¡stica comunidade do fÃ³rum oficial da Raspberry PI (raspberrypi.org). Icon e fannart por Marquerite. Obrigado a Todos!</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.veetle" version="0.2.3" name="Veetle" provider-name="t0mm0">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.simplejson" version="2.0.10"/>
+        <import addon="script.common.plugin.cache" version="1.3.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point= "xbmc.addon.metadata">
+        <summary>Browse and stream from veetle.com</summary>
+        <description>Enables watching streams on veetle.com that are flash enabled.</description>
+        <disclaimer>Does not work for 'HD' streams which require a software download.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+</addons>
